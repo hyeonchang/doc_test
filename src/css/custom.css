@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -15,10 +15,31 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+/* web font */
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+
+/* primary color should be Burgundy */
+:root {
+  --ifm-color-primary: #800020;
+  --ifm-color-primary-dark: #6e001b;
+  --ifm-color-primary-darker: #5f0016;
+  --ifm-color-primary-darkest: #4c0010;
+  --ifm-color-primary-light: #8f0024;
+  --ifm-color-primary-lighter: #a1002a;
+  --ifm-color-primary-lightest: #c40034;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-heading-font-family: 'Montserrat', sans-serif;
+  --ifm-font-family-base: 'Montserrat', sans-serif;
+  
+  /* link color */
+  --ifm-footer-link-hover-color: #ddd;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +48,51 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+
+/* primary color should be Light Gray in dark mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #d3d3d3;
+  --ifm-color-primary-dark: #c0c0c0;
+  --ifm-color-primary-darker: #a8a8a8;
+  --ifm-color-primary-darkest: #8c8c8c;
+  --ifm-color-primary-light: #e6e6e6;
+  --ifm-color-primary-lighter: #f0f0f0;
+  --ifm-color-primary-lightest: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* link color */
+  --ifm-link-color: rgb(0, 128, 255);
 }
+
+.navbar__logo img {
+
+  /* url */
+  /* content: url(../../static/img/docusaurus.png); */
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 10px;
+}
+
+.avatar__name a {
+  color: var(--ifm-heading-color);
+
+}
+
+article h2 a {
+  color: var(--ifm-heading-color);
+}
+
+.table-of-contents, .table-of-contents ul{
+  font-size: 0.9rem;
+}
+
+/* .button.button--secondary.button--lg{
+  
+  border: none;
+  margin: 5px;
+}
+
+.button.button--secondary.button--lg:hover{
+  background-color: var(--ifm-color-primary-light);
+  color: white;
+} */

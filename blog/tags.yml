@@ -14,3 +14,13 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+Suprema AI:
+  label: Suprema AI
+  permalink: /suprema-ai
+  description: Suprema AI tag description
+
+Blog:
+  label: Blog
+  permalink: /blog
+  description: Blog tag description

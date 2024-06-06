@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Developer Center',
+  tagline: 'We bring Safe, Fast and Affordable On-Device AI Solutions in your reach',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -40,19 +40,19 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+       docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -60,59 +60,115 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'q-face-pro',
+        path: 'products/q-face-pro',
+        routeBasePath: 'products/q-face-pro',
+        sidebarPath: './sidebarsProducts.js',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'q-vision-engine',
+        path: 'products/q-vision-engine',
+        routeBasePath: 'products/q-vision-engine',
+        sidebarPath: './sidebarsProducts.js',
+        // ... other options
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'q-face-engine',
+        path: 'products/q-face-engine',
+        routeBasePath: 'products/q-face-engine',
+        sidebarPath: './sidebarsProducts.js',
+        // ... other options
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.jpg',
       navbar: {
-        title: 'My Site',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Suprema AI, Inc.',
           src: 'img/logo.svg',
+          srcDark: 'img/logo_dark.svg',
+          
         },
         items: [
+          {to: '/' , label: 'Home', position: 'left'},
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'overviewSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+
+          {to: '/blog', label: 'Blog', position: 'right'},
+          
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            type: 'dropdown',
+            label: 'Products',
+            position: 'left',
+            items: [
+              {
+                label: 'Q-Face Pro',
+                to: 'products/q-face-pro/intro',
+              },
+              {
+                label: 'Q-Face Engine',
+                to: 'products/q-face-engine/intro',
+              },
+              {
+                label: 'Q-Vision Engine',
+                to: 'products/q-vision-engine/intro',
+              },
+            ],
           },
+
+          {
+            label: 'Contact Us',
+            position: 'right',
+            href: 'https://www.suprema.ai/contact',
+          }
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Overview',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introduction',
+                to: '/docs/overview/introduction',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Products',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Q-Face Pro',
+                to: '/products/q-face-pro/intro',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Q-Face Engine',
+                to: '/products/q-face-engine/intro',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Q-Vision Engine',
+                to: '/products/q-vision-engine/intro',
               },
             ],
           },
@@ -125,12 +181,24 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/suprema-ai',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://kr.linkedin.com/company/suprema-ai',
               },
             ],
           },
+          
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        logo: {
+          alt: 'Suprema AI, Inc.',
+          src: 'img/logo_suprema_ai.svg',
+          href: 'https://suprema.ai',
+          width: 160,
+          height: 51,
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} Suprema AI, Inc.`,
       },
       prism: {
         theme: prismThemes.github,
