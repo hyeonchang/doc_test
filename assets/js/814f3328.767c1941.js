@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_test=self.webpackChunkdoc_test||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Build your innovative applications","permalink":"/doc_test/blog/b","unlisted":false}]}')}}]);

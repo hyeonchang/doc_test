@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdoc_test=self.webpackChunkdoc_test||[]).push([[1736],{7337:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"q-face-pro"}')}}]);
