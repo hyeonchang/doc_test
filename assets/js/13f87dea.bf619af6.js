@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc_test=self.webpackChunkdoc_test||[]).push([[9310],{5763:e=>{e.exports=JSON.parse('{"tags":[{"label":"Suprema AI","permalink":"/doc_test/blog/tags/suprema-ai","description":"Suprema AI tag description","count":1},{"label":"Blog","permalink":"/doc_test/blog/tags/blog","description":"Blog tag description","count":1}]}')}}]);
