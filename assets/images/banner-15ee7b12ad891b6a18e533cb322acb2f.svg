@@ -26,15 +26,15 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    showgrid="false"
-   inkscape:zoom="0.42987889"
-   inkscape:cx="467.57356"
-   inkscape:cy="626.92076"
-   inkscape:window-width="1559"
+   inkscape:zoom="2.3131055"
+   inkscape:cx="812.97633"
+   inkscape:cy="872.20406"
+   inkscape:window-width="1512"
    inkscape:window-height="731"
    inkscape:window-x="0"
-   inkscape:window-y="25"
+   inkscape:window-y="1216"
    inkscape:window-maximized="0"
-   inkscape:current-layer="g11113" />
+   inkscape:current-layer="g11055" />
 <g
    id="g11121">
 	<g
@@ -720,15 +720,15 @@
    style="clip-path:url(#SVGID_00000061472237935663397650000018256081105537683118_);fill:#808080">
 			<g
    id="g11005"
-   style="fill:#808080">
+   style="fill:#808080;stroke:none">
 				<circle
-   style="fill:#808080;stroke:#00758E;stroke-width:2.4864;stroke-miterlimit:10"
+   style="fill:#808080;stroke:none;stroke-width:2.4864;stroke-miterlimit:10"
    cx="917.784"
    cy="948.668"
    r="10.225"
    id="circle11001" />
 				<path
-   style="fill:#808080"
+   style="fill:#808080;stroke:none"
    d="M917.784,942.172c3.582,0,6.495,2.914,6.495,6.496c0,3.582-2.913,6.494-6.495,6.494      c-3.581,0-6.495-2.912-6.495-6.494C911.289,945.086,914.203,942.172,917.784,942.172z"
    id="path11003" />
 			</g>
